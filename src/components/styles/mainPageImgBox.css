@@ -1,0 +1,12 @@
+.mainImgBox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+.mainImgBox img{
+    width: 12%;
+}
