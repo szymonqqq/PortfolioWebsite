@@ -10,10 +10,10 @@ const MainPage = () => {
 
     return(
         <>
-        <MobileNav/>
-        {/* <TypeWriter/>         */}
-        {/* <MainPageImgBox/> */}
-        <Projects/>
+
+        <TypeWriter/>        
+        <MainPageImgBox/>
+        {/* <Projects/> */}
         
         
         </>

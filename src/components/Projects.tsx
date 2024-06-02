@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import TypeWriterScript from "./TypeWriterScript";
 import "./styles/projects.css"
 const worklyImg: string = require("../img/workly.png");
-
+const tetris: string = require("../img/tetris.png");
 const infoAboutProjects = [{
     id: 0,
     name: "Workly", 
@@ -12,10 +12,10 @@ const infoAboutProjects = [{
 },
 {
     id: 0,
-    name: "Workly", 
-    linkImg: worklyImg,
+    name: "Tetris game", 
+    linkImg: tetris,
     githubLink: "https://github.com/szymonqqq/workly",
-    description: "Workly is advanced React aplication. You can plan your day, write a note, save important information, create your own flashcard and a lot more..."
+    description: "It's copy of oryginal tetris game with new style and more things."
 
 }
 
@@ -53,7 +53,7 @@ const ProjectBox: React.FC<ProjectsBoxProps>  = ({project}) => {
            
                 }
                 
-                }>{moreInfo?"Colapse": "See more"}</button>
+                }>{styleMoreInfo?"Colapse": "See more"}</button>
            
 
         </div>

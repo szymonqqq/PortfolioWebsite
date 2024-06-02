@@ -49,13 +49,17 @@
     
     
 }
+.mobile_nav li a{
+    text-decoration: none;
+    color: black;
+}
 .mobile_unroll{
     animation: unroll .5s;
     top: 0%;
 }
 .mobile_roll{
     animation: roll .5s;
-    top: -80%;
+    top: -100%;
 }
 @keyframes unroll {
     0%{
