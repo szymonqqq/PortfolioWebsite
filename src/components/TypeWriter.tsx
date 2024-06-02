@@ -1,57 +1,21 @@
 import React, { useEffect, useState } from "react";
 import './styles/type_writer.css'
+import TypeWriterScript from "./TypeWriterScript";
 
 
-interface TypeWriterProps {
-    text: string[];
-}
 
-const TypeWriter: React.FC<TypeWriterProps>= ({text}) =>{
-    const [unvisibleBorder, setuUnvisibleBorder] = useState([])
-    const [show, setShowText] = useState<string[]>(text.map(()=>""))
-    let i = 0
-    let j=0
+const TypeWriter= () =>{
   
-useEffect(()=>{
-    const pp = setInterval(()=>{
-        
-   
-     
-        if(i<=text[j].length-1){
-            let txt = show[j] + text[j][i]
-            show[j] = txt
-       
-            setShowText(prev =>{
-                let updatedShow = [...prev]; 
-                updatedShow[j]=txt
-                return updatedShow;
-            }
-          
-            )
-            i++
-        }
-           else if(j<text.length-1){
-            j++
-            i=0
-            
-           }
-        
-       
-    }, 100)
-   
-    return () => clearInterval(pp); 
- 
-   
-    
-},[text])
-const genE = show.map((txt, index) => (
-    <p key={index} style={txt!==text[index]&&txt!==""?{borderRight: "1px solid black"}:{}}> {txt}</p>
-));
 return(
 <div className="text_box">
    
+{/* <TypeWriterScript text={} */}
+     <TypeWriterScript text={["Hi,", "I'm Szymon", "Full Stack Developer.", "I'm passionate about", "crafting beautiful", "and intuitive, ", "user interfaces.", "About me ->","Projects ->"]}/>
+     {/* <TypeWriterScript text={["Hi, I'm Szymon Full Stack Developer. I'm passionate about crafting beautiful and intuitive, user interfaces. ", "About me ->", " Projects ->"]}/> */}
 
-    {genE}  
+    
+    
+    {/* {genE}   */}
      {/* <p>Hi,</p> 
     <p>I'm Szymon</p> 
     <p>Full Stack Developer.</p>

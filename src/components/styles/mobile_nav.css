@@ -40,6 +40,7 @@
     position: absolute;
     animation: unroll .5s;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    z-index: 1;
 }
 .mobile_nav li{
     padding: 5% 0;

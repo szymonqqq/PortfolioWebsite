@@ -2,8 +2,7 @@
 display: flex;
 align-items: start;
 justify-content: center;
-height: 50%;
-margin-top: 35%;
+height: 92vh;
 width: 100%;
 flex-direction: column;
 padding-left: 5%;
@@ -13,12 +12,13 @@ padding-left: 5%;
 .text_box p{
     letter-spacing: 1px;
     font-weight: lighter;
-    white-space: nowrap;
+    white-space: wrap;
     overflow: hidden;
     font-family: monospace;
     font-size: 2.5rem;
     text-align: left;
-    height: 8%;
+    height: 5%;
+   
 
   
 }

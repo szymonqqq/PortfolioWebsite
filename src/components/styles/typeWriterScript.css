@@ -1,0 +1,12 @@
+p span{ 
+    /* animation: flashSpan 1s infinite; */
+}
+
+@keyframes flashSpan {  
+    0%{
+        opacity: 1 ;
+    }
+    100%{
+        opacity: 0 ;
+    }
+}
