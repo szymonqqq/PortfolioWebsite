@@ -4,15 +4,21 @@ import TypeWriterScript from "./TypeWriterScript";
 
 
 
-const TypeWriter= () =>{
+const TypeWriter = () => {
   
 return(
 <div className="text_box">
    
 {/* <TypeWriterScript text={} */}
-     <TypeWriterScript text={["Hi,", "I'm Szymon", "Full Stack Developer.", "I'm passionate about", "crafting beautiful", "and intuitive, ", "user interfaces.", "About me ->","Projects ->"]}/>
-     {/* <TypeWriterScript text={["Hi, I'm Szymon Full Stack Developer. I'm passionate about crafting beautiful and intuitive, user interfaces. ", "About me ->", " Projects ->"]}/> */}
+     { <TypeWriterScript text={["Hi,", "I'm Szymon", "Full Stack Developer.", "I'm passionate about", "crafting beautiful", "and intuitive, ", "user interfaces.", "About me ->", "Projects ->"]} nameClass={"link"}/>}
+     {/* { <TypeWriterScript text={["Hi,", "I'm Szymon", "Full Stack Developer.", "I'm passionate about", "crafting beautiful", "and intuitive, ", "user interfaces."]}/>} */}
+     {/* <TypeWriterScript text={["About me ->"]} nameClass={"go_to_about_me"}/>
+     <TypeWriterScript text={["Projects ->"]} nameClass={"go_to_projects"}/> */}
 
+ 
+     {/* <TypeWriterScript text={["Hi, I'm Szymon Full Stack Developer. I'm passionate about crafting beautiful and intuitive, user interfaces. ", ]}/> */}
+
+    
     
     
     {/* {genE}   */}
@@ -31,5 +37,5 @@ return(
 
 
 
-}
+} 
 export default TypeWriter;

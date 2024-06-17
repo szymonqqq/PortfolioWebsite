@@ -6,7 +6,7 @@ import Projects from "../Projects";
 
 
 
-const MainPage = () => {
+const MainPage  = () => {
 
     return(
         <>

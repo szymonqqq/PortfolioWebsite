@@ -4,9 +4,10 @@
     display: flex;
     flex-direction: column;
     
+    
 }
 .projects p:nth-of-type(1){
-    font-size: 30px ;
+    font-size: 3rem;
     margin-bottom: 5%;
     padding-left: 5%;
 }
@@ -24,14 +25,14 @@
     align-self: center;
 }
 .project_box h2{
-    font-size: 30px;
+    font-size: 3rem;
     margin-top: 5%;
 }
-.project_box button{
+.project_box button, .main_btn{
     align-self: center;
     padding: 4% 10%;
     margin-top: 5%;
-    font-size: 18px;
+    font-size: 1.8rem;
     background-color: #fff;
     /* border-radius: 10px; */
     border: 1px solid grey;
@@ -44,10 +45,10 @@
 .project_box a{
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 2rem;
 }
 .projects  p.description{
-    font-size: 18px;
+    font-size: 1.8rem;
     /* margin-top: 5%; */
     /* position: absolute;  */
     /* top: 0; */

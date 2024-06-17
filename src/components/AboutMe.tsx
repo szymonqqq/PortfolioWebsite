@@ -10,7 +10,7 @@ const java: string = require("../img/java.svg").default;
 const node: string = require("../img/node.svg").default;
 const react: string = require("../img/react.svg").default;
 const js: string = require("../img/js.svg").default;
-const php: string = require("../img/php.svg").default;
+// const php: string = require("../img/php.png");
 
 const AboutMe = () => {
 
@@ -34,7 +34,7 @@ return(<div className="about_me">
     <img src={node} alt="" />
     <img src={react} alt="" />
     <img src={js} alt="" />
-    <img src={php} alt="" />
+    <img src={"https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg "} alt="" />
 </div>
 
 </div>)

@@ -11,7 +11,7 @@ const infoAboutProjects = [{
     description: "Workly is advanced React aplication. You can plan your day, write a note, save important information, create your own flashcard and a lot more..."
 },
 {
-    id: 0,
+    id: 1,
     name: "Tetris game", 
     linkImg: tetris,
     githubLink: "https://github.com/szymonqqq/workly",
@@ -48,7 +48,7 @@ const ProjectBox: React.FC<ProjectsBoxProps>  = ({project}) => {
             <div className="description_box">
                  {moreInfo &&<p className={`description ${styleMoreInfo ? "roll_dsc" : "unroll_dsc"}`}>{project.description}</p>}
             </div>
-            <button onClick={()=>{     setStyleMoreInfo(prev=>!prev)
+            <button className="main_btn" onClick={()=>{     setStyleMoreInfo(prev=>!prev)
               moreInfo?setTimeout(()=>setMoreInfo(prev=>!prev), 11000):setMoreInfo(true)
            
                 }

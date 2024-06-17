@@ -2,7 +2,7 @@
     display: flex;
     align-self:  flex-end;
     width: 8vh;
-    height: 8vh;
+    height: 8dvh;
     justify-content: center;
     align-items: center;
     border: none;
@@ -94,4 +94,12 @@
     transform: rotate(-45deg);
     /* top: -1%; */
     width: 100%;
+}
+@media (min-width: 768px) {
+    .turn_menu div{
+        width: 60%;
+    }
+    /* .mobile_nav li{
+        font-size: 2.8rem;
+    } */
 }

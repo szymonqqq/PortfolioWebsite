@@ -52,7 +52,13 @@ const generateSpan = (txt:String, index:number) => {
 
 const genE = show.map((txt, index,) => (
     
-    <p key={index} className={`${nameClass!==undefined?nameClass:""}`}> {txt} {generateSpan(txt, index)}</p>
+    <p key={index} className={`${nameClass!==undefined?nameClass:""}`} onClick={()=>{
+        if(nameClass==="link"){
+        if(index==show.length-2) window.location.href = "/about_me";
+        else if(index==show.length-1) window.location.href = "/projects";
+        }
+    }
+        }> {txt} {generateSpan(txt, index)}</p>
 ));
 
 
