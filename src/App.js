@@ -2,10 +2,10 @@ import './App.css'
 import MainPage from './components/MainPage/MainPage'
 import AboutMe from './components/AboutMe'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MobileNav from './components/MobileNav';
+import MobileNav from './components/Nav/MobileNav';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import PcNav from './components/PcNav';
+import PcNav from './components/Nav/PcNav';
 function App() {
   return (
     <div className="App">
