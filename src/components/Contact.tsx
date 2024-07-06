@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TypeWriterScript from "./TypeWriterScript";
 import "./styles/contact.css"
-import MainPageImgBox from "./MainPage/MainPageImgBox";
+import MainPageImgBox from "./MainPage/ImgBox";
 import emailjs from '@emailjs/browser';
 
 const Contact = () =>{
@@ -38,7 +38,8 @@ const Contact = () =>{
                 <textarea placeholder="Message" onChange={e=>setText(e.target.value)}></textarea>
                 <button className="main_btn" onClick={sendMessage}>Sent Message</button>
             </form>
-            <MainPageImgBox/>
+      
+          <div className="contact_img_box">      <MainPageImgBox /> </div> 
         </div>
     )
 

@@ -1,6 +1,6 @@
 import React from "react";
 import TypeWriter from "../TypeWriter";
-import MainPageImgBox from "./MainPageImgBox";
+import ImgBox from "./ImgBox";
 import Projects from "../Projects";
 
 
@@ -11,7 +11,7 @@ const MainPage  = () => {
         <>
 
         <TypeWriter/>        
-        <MainPageImgBox/>
+        <ImgBox/>
         {/* <Projects/> */}
         
         

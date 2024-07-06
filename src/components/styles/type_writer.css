@@ -29,11 +29,30 @@ margin-top: 10%;
 .text_box p:nth-last-of-type(2), .text_box p:nth-last-of-type(1 ){
   font-weight: bold ;
 }
+@media (min-width: 962px) {
+  .text_box{
+    width: 50%;
+    padding-top: 10%;
+  }
+ 
+
+}
+
 @media (min-width: 1024px) {
   .text_box{
     width: 50%;
     padding-top: 20%;
   }
 
+  .text_box p{
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1366px) {
+  .text_box{
+   
+    padding-top: 15%;
+  }
 
 }
+

@@ -43,7 +43,9 @@ const ProjectBox: React.FC<ProjectsBoxProps>  = ({project}) => {
     return(
         <div className="project_box" key={project.id}>
             <img src={project.linkImg} alt="" />
+            <div className="content">
             <h2>{project.name}</h2>
+         
             <a href={project.githubLink}>check on Github</a>
             <div className="description_box">
                  {moreInfo &&<p className={`description ${styleMoreInfo ? "roll_dsc" : "unroll_dsc"}`}>{project.description}</p>}
@@ -55,7 +57,7 @@ const ProjectBox: React.FC<ProjectsBoxProps>  = ({project}) => {
                 
                 }>{styleMoreInfo?"Colapse": "See more"}</button>
            
-
+           </div>
         </div>
     )
 
@@ -77,8 +79,11 @@ const Projects = ( ) => {
 
 return(
 <div className="projects">
+
     <TypeWriterScript text={["Projects"]}/>
+  
     <ProjectList/>
+    
 </div>
 
 

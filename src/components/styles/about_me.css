@@ -117,3 +117,56 @@ width: fit-content;
     height: 22vh;
 }
 }
+@media (min-width: 962px) {
+    .profile_photo{
+        width: 60vh;
+        height: 60vh;
+    }
+    .about_me p:nth-child(1){
+        margin-top: 5%;
+    }
+    .about_me .technologies_img img {
+    margin: 1%;
+    }
+    .about_me .technologies_img img {
+    width: 10%;
+    }
+}
+@media (min-width: 1024px) {
+    .about_me{
+        flex-direction: row;
+        flex-wrap: wrap;
+    } 
+    .about_me p:nth-child(1) {
+        padding-left: 60%;
+        margin-top: 10%;
+        width: 100%;
+        /* margin-left: 10%; */
+    }
+    .profile_photo  {
+    align-self: flex-end;
+    height: 50vh;
+    width: 50vh;
+    justify-content: flex-start;
+    margin-top: 2%;
+    
+    }
+    .about_me p:nth-child(3){
+        width: 50%;
+        margin: 15% 0 0 5%;
+    }
+    .technologies{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5%;
+    }
+    .about_me .technologies_img{
+        margin: 0 0 5%;
+        height: auto;
+    }
+    .about_me .technologies_img img{
+        width: 8% ;
+        margin: 0;
+    }
+    }

@@ -102,4 +102,9 @@
     /* .mobile_nav li{
         font-size: 2.8rem;
     } */
+}@media (min-width: 962px) {
+    .mobile_nav{
+        padding-top: 5%;
+    }
+    
 }
